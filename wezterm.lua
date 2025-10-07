@@ -1,9 +1,9 @@
-local wezterm = require("wezterm")
-local appearance = require("appearance")
-local bindings = require("bindings")
+local wezterm = require 'wezterm'
+local appearance = require 'appearance'
+local bindings = require 'bindings'
 
-require("events.gui-startup").setup()
-require("events.command-palette").setup()
+require('events.gui-startup').setup()
+require('events.command-palette').setup()
 
 local config = wezterm.config_builder()
 
