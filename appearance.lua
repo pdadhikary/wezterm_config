@@ -3,6 +3,7 @@ local wezterm = require 'wezterm'
 local M = {}
 
 function M.apply_to_config(config)
+  config.enable_wayland = true
   config.max_fps = 120
   config.animation_fps = 120
   config.prefer_egl = true
@@ -12,7 +13,7 @@ function M.apply_to_config(config)
   config.color_scheme = 'Gruvbox Dark (Gogh)'
   config.underline_position = -2
   config.underline_thickness = 2
-  config.window_decorations = 'RESIZE'
+  config.window_decorations = 'NONE'
   config.hide_tab_bar_if_only_one_tab = true
   config.window_padding = {
     left = 0,
@@ -27,7 +28,7 @@ function M.apply_to_config(config)
   config.cursor_blink_rate = 650
 
   config.enable_tab_bar = true
-  config.use_fancy_tab_bar = false
+  config.use_fancy_tab_bar = true
   config.tab_max_width = 25
   config.show_tab_index_in_tab_bar = false
   config.switch_to_last_active_tab_when_closing_tab = true
